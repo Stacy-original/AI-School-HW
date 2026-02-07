@@ -68,7 +68,7 @@ def listSearchByName(list):
             break
         else:
             for i,item in enumerate(list):
-                if item["name"].lower()==searchName.lower():
+                if searchName.lower() in item["name"].lower():
                     foundList.append(item)
             if len(foundList) == 0:
                 print("No match found") 
